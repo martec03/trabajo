@@ -335,6 +335,12 @@
    .contador{
     width:100%;
    }
+     .social{
+    width:100%;
+   }
+   .productos{
+    width:100%;
+   }
 }
 
 @media (max-width: 550px) {
