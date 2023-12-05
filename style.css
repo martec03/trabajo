@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    font-family:'roboto', Courier, monospace;
+   }
+   body{
+    background-color: #b5b7b8;
+   }
+   .contenedor-principal{
+     max-width: 1200px;
+     margin: 20px auto;
+     display: flex;
+     flex-wrap: wrap;
+     box-shadow: 0px 0px 5px #000000;
+     border-radius: 6px;
+     background-color: #fafbfc;
+   }
+
+   .menu-superior{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content:center;
+    text-align: center;
+    background-color: #fafbfc;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+   }
+
+   .menu-superior ul{
+    background-color: #fafbfc;
+   }
+
+   .menu-superior ul li{
+    display: block;
+    width: 80px;
+    background-color: #fafbfc;
+    margin: 0px 5px;
+    border-right: 1px solid #e1e2e4;
+    color: #0856af;
+    height: 10px;
+    font-size:12px;
+    padding: 4px;
+   }
+   .menu-superior ul li:hover{
+    color: rgb(116, 8, 8);
+    cursor: pointer;
+   }
+
+   .barra-header{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+   }
+   .logo{
+    width: 30%;
+    display: block;
+   
+    float: left;
+   }
+   .logo .img-logo img{
+    max-width: 258px;
+    
+   }
+   .barra-navegacion{
+    width: 70%;
+    text-align: center;
+    
+   }
+   .buscador{
+    padding:10px;
+    
+   }
+   /*===========MENU==============*/
+   .menu{
+    width: 100%;
+   }
+   ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+   }
+   li{
+    width: 120px;
+    display: block;
+    text-decoration: none;
+    list-style: none;
+    padding: 10px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    background-color: #1874dd;
+    border-radius: 3px;
+    color: #c9c5c5;
+    font-size:12px;
+   }
+   li:hover{
+    background-color: #dd2f18;
+    cursor: pointer;
+   }
+
+   .barrar-carrusel{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+   }
+
+   /*=============CATEGORIAS========*/
+   .categorias{
+    max-width: 300px;
+    width: 30%;
+    padding: 15px;
+    box-sizing: border-box;
+   }
+
+   .categorias h3{
+      width: 100%;
+      border-bottom: 1px solid #5a6770;
+      color: #1c4f70;
+   }
+
+   .categorias li{
+    width: 300px;
+    max-width: 300px;
+    background-color: #fafbfc;
+    border-bottom: 1px solid #c3c7ca;
+    color: #1f5da3;
+   }
+
+   .categorias li:hover{
+    color: #b80a0a;
+   }
+   /*============= CARRUSELL===============*/
+   .carrusel{
+    width: 70%;
+    padding: 15px;
+    
+    box-sizing: border-box;
+   }
+   
+  .carrusel img{
+    width: 100%;
+   height: 250px;
+     box-sizing: border-box;
+  }
+  .flechas{padding:0 10px; font-size:50px; font-weight:bold; vertical-align:middle}
+  .flechas:hover, .auto:hover{cursor:pointer}
+  .auto{font-size:30px; padding: 0 8px; font-weight:bold; vertical-align:middle}
+  .ctrl{
+    width: 100%;
+    height: 100px;
+    font-size:20px;padding: 0 10px;
+    z-index: 1000;
+  }
+  /*==========MAIN================*/
+  .main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(22, 38, 49, 0.2);
+    border-bottom: 1px solid rgba(22, 38, 49, 0.2);
+  }
+  .reloj{
+    width: 30%;
+    height: 100px;
+    background-color: #abb8c2;
+    padding: 20px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    text-align: center;
+    
+  }
+
+  .contador{
+    width: 70%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  .contador p{
+    padding: 20px;
+    margin:0px 20px;
+
+  }
+  .contador button{
+    background-color:#0a78f7;
+    color:#fff;
+    width: 150px;
+    border: none;
+    height: 40px;
+    padding: 5px;
+    border-radius: 3px;
+  }
+
+  .contador button:hover{
+    background-color:#af0808;
+    cursor: pointer;
+  }
+  #areaContador{
+    padding: 5px;
+    color: #630707;
+    font-weight: bold;
+    font-size: 40px;
+  }
+
+  /*===============PRODUCTOS ==================*/
+  .seccion{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .social{
+    width: 30%;
+    padding: 15px;
+    box-sizing: border-box;
+    color: #0856af;
+    font-size: 30px;
+    text-align: center;
+  }
+  i:hover{
+    color: #b60707;
+    cursor: pointer;
+  }
+
+  .social h4{
+    background-color: #fafbfc;
+    color: #0856af;
+    font-size: 22px;
+
+  }
+
+  .productos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    padding: 15px;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+   
+   .articulo{
+    padding: 10px;
+    width: 250px;
+    height: 300px;
+    background-color: #c7e2f3;
+    margin: 20px ;
+    text-align: center;
+    box-shadow: 0px 0px 5px #000000;
+    border-radius: 6px;
+   }
+   .articulo .image{
+    position: relative;
+    width:100%;
+    height: 150px;
+   }
+   .articulo img{
+    width:100%;
+    height: 150px;
+    
+   }
+   .articulo p{
+   font-size: 12px;
+   margin: 10px auto;
+   }
+
+   .articulo button{
+    background-color:#0a78f7;
+    color:#fff;
+    width: 150px;
+    border: none;
+    height: 30px;
+    padding: 5px;
+    border-radius: 3px;
+    margin-top: 10px;
+  }
+
+  .articulo button:hover{
+    background-color:#af0808;
+    cursor: pointer;
+  }
+
+   
+   footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border-top: 1px solid rgba(22, 38, 49, 0.2);
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(30, 29, 46);
+    color: #abb8c2;
+    font-size: 12px;
+   }
+
+
+   
+
+
+/*=================RESPONSIVO===================*/
+@media (max-width: 750px) {
+  .logo{
+    width: 100%;
+    text-align: center;
+   
+  }
+
+  .barra-navegacion{
+    width: 100%;
+    text-align: center;
+   }
+   .barrar-carrusel{
+    justify-content: center;
+   }
+   .categorias{
+    width: 100%;
+    text-align: center;
+   }
+   .carrusel{
+    width:100%;
+   }
+   .reloj{
+    width:100%;
+   }
+   .contador{
+    width:100%;
+   }
+}
+
+@media (max-width: 550px) {
+  .carrusel{
+    display: none;
+  }
+}

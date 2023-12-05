@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen | SEGUNDO PARCIAL</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+</head>
+<body  onload="mueveReloj();reset(); automat(2000,-1)">
+    <div class="contenedor-principal">
+        <div class="menu-superior">
+          <ul>
+            <li>Inicio</li>
+            <li>Horarios</li>
+            <li>Tramites</li>
+            <li>Contactos</li>
+          </ul>
+        </div>
+        <div class="barra-header">
+          <div class="logo">
+            <div class="img-logo">
+              <img src="img/logo.png" alt="">
+            </div>
+          </div>
+          <div class="barra-navegacion">
+            <div class="buscador">
+              <i class="fas fa-shopping-cart"></i>
+              <select>
+                <option>Seleccionar</option>
+                <option>DES. DE SOFTWARE</option>
+                <option>SERVICIO TECNICO</option>
+                <option>RED DATO Y VOZ</option>
+                <option>VENTAS </option>
+                <option>OTROS</option>
+              </select>
+              <input type="text" value="">
+              <i class="fas fa-search"></i>
+            </div>
+            <div class="menu">
+              <ul>
+                <li>Inicio</li>
+                <li>Sobre Nosotros</li>
+                <li>Productos</li>
+                <li>Contactos</li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="barrar-carrusel">
+          <div class="categorias">
+            <h3>Nuestras Líneas</h3>
+              <ul>
+                <li>Area Desarrollo</li>
+                <li>Area Servicio</li>
+                <li>Area Redes</li>
+                <li>Area Ventas</li>
+                <li>Area Reuniones</li>
+              </ul>
+          </div>
+          <div class="carrusel">
+              
+              <div class="flechas" onclick="parar()">
+                <img id="centro" src=""  alt="">
+              </div>
+          </div>
+        </div>
+        <div class="main">
+          <div class="reloj">
+            <h3>Mi Reloj</h3>
+            <form name="form_reloj">
+              <input type="text" name="reloj" size="15" style="background-color : Black; color : White; font-family : Verdana, Arial, Helvetica; font-size : 20px; text-align : center;" onfocus="window.document.form_reloj.reloj.blur()">
+            </form>
+          </div>
+          <div class="contador">
+            <h3>Mi Contador</h3>
+            <p>Es una herramienta de mucha importancia que nos ayuda a contabilizar de manera manual el tikeo de la institucion</p>
+            <button id="botonClick">Click para contar </button>
+            <button id="botonClick1">Resetear </button>
+            <p id="areaContador">00</p>
+            <script type="text/javascript">
+                var botonElement = document.getElementById("botonClick");
+                var botonElement1 = document.getElementById("botonClick1");
+                var pElement = document.getElementById("areaContador");
+                var contador = 0;
+                botonElement.onclick = function () {
+                    contador++;
+                    pElement.textContent = contador;
+                }
+                botonElement1.onclick=function(){
+                  contador=0;
+                  pElement.textContent = contador;
+                }
+            </script>
+          </div>
+        </div>
+        <div class="seccion">
+          <div class="social">
+            <h4>Redes Sociales</h4>
+            <i class="fab fa-whatsapp-square"></i>
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram-square"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+          <div class="productos">
+            <article class="articulo">
+              <div class="image"><img src="img/service-1.jpg" alt=""></div>
+              <p>Desarrollo de Software a su medida y segun su necesidad, bajo los estandares internaionales</p>
+              <h5>Stock : 50</h5>
+              <h5>Precio : Bs. 3,150.00 </h5>
+              <button>Ver Detalle</button>
+            </article>
+            <article class="articulo">
+              <div class="image"><img src="img/service-2.jpg" alt=""></div>
+              <p>Siempre estamos dispuesto y atentos para cualquier emergencia en el servicio tecnico informatico</p>
+              <h5>Stock : 10</h5>
+              <h5>Precio : Bs. 2,050.00 </h5>
+              <button>Ver Detalle</button>
+            </article>
+            <article class="articulo">
+              <div class="image"><img src="img/service-3.jpg" alt=""></div>
+              <p>Estructuracion e instalacion de todo tipo de redes, en su oficina o domicilio</p>
+              <h5>Stock : 20</h5>
+              <h5>Precio : Bs. 500.00 </h5>
+              <button>Ver Detalle</button>
+            </article>
+            <article class="articulo">
+              <div class="image"><img src="img/service-4.jpg" alt=""></div>
+              <p>Asesoramiento en las tomas de desciciones en su negocio en la implementacion de la tecnologia</p>
+              <h5>Stock : 00</h5>
+              <h5>Precio : Bs. 150.00 </h5>
+              <button>Ver Detalle</button>
+            </article>
+           
+          </div>   
+
+        </div>
+     
+        
+        <footer>
+           <p>UNIVERSIDAD ADVENTISTA DE BOLIVIA</p>
+           <p>Materia: Tecnologia en Iternet</p>
+           <p>Docente: Lic.Ximena Añaguaya</p>
+           <p>Estudiante : Marcelino Saca Tarque</p>
+        </footer>
+      </div>
+      
+</body>
+<script src="script.js"></script>
+</html>
